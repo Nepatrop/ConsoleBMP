@@ -7,7 +7,9 @@
 
 class BMPReader {
 public:
-	std::ifstream* bmpFile;
+	std::ifstream bmpFile;
+	BITMAPFILEHEADER fileHeader;
+	BITMAPINFOHEADER infoHeader;
 
 	bool openBMP(const std::string& fileName);
 	void displayBMP();
