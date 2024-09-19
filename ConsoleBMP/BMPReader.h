@@ -4,6 +4,7 @@
 #include <string>
 #include <fstream>
 #include <windows.h>
+#include <vector>
 
 class BMPReader {
 public:
